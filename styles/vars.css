@@ -1,0 +1,31 @@
+:root {
+	/*focused / active states / links*/
+	--color-iris       : #4d5ae5;
+
+	/*call to actions*/
+	--color-cta-ocean  : #404bbf;
+
+	/*overlays / shadows / headings*/
+	--color-navyblue   : #2e2f42;
+
+	/*valid fields / success messages*/
+	--color-green      : #31d0aa;
+
+	/*body text*/
+	--color-stale      : #434455;
+
+	/*helper text  /  deemphasized text*/
+	--color-lightstale : #8e8f99;
+
+	/*accent color / hairlines  /subtle backgrounds*/
+	--color-cornflover : #e7e9fc;
+
+	/*light mode backgrounds and light mode Dialogs/alerts*/
+	--color-cloud      : #f4f4fd;
+
+	/*overlay modal*/
+	--color-nbmodal    : #2e2f42;
+
+	/*hero image background*/
+	--color-bg-grey    : #2e2f42 .7;
+	}

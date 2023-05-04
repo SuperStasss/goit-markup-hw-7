@@ -1,0 +1,78 @@
+@media screen and (min-width: 1200px) {
+	.container{
+		max-width: 1158px;
+		}
+
+
+
+	.header__logo{
+		margin-right: 76px;
+		}
+	.header__menu {
+		display      : flex;
+		}
+	.header__contacts {
+		display: flex;
+		justify-content : end;
+		gap             : 40px;
+		}
+	.header__contacts a{
+		font-size: 16px;
+		line-height: calc(24 / 16);
+		}
+	.hero__h1 {
+		margin-bottom : 48px;
+		}
+
+	.feature__block svg {
+		display: block;
+		justify-items: center;
+		}
+	.feature__block-img {
+		padding          : 24px 100px;
+		background-color : var(--color-cloud);
+		}
+	.feature__blocks {
+		gap: 24px;
+		display: flex;
+		}
+	.about {
+		padding-top : 0;
+		display: block;
+		}
+	.about__h2 {
+		text-align    : center;
+		margin-bottom : 72px;
+		}
+
+
+	.about__images {
+		display         : flex;
+		justify-content : space-between;
+		}
+	.team__cards{
+		flex-wrap: nowrap;
+		}
+
+	.customers__cards {
+		display         : flex;
+		flex-wrap: nowrap;
+		justify-content : space-between;
+		}
+	.footer {
+		padding : 100px 0;
+		}
+	.footer__logo {
+		margin : 0 120px 0 0;
+		}
+	.footer .container {
+		display : flex;
+		flex-wrap: nowrap;
+		}
+	.footer__social{
+		margin-right: auto;
+		}
+	.footer__subscribe{
+		margin: 0;
+		}
+	}
