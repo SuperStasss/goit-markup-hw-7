@@ -516,11 +516,12 @@ textarea {
 
 .modal__checkbox-img {
 	display          : block;
-	width            : 16px;
+	width            : 19px;
 	height           : 16px;
 	margin-right     : 8px;
 	background-image : url("../img/svg/svg/check-dis.svg");
 	transition       : .5s;
+	background-repeat: no-repeat;
 	}
 
 
