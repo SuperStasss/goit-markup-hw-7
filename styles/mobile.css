@@ -159,8 +159,11 @@
 	margin : 0 auto;
 	}
 .feature__block h3 {
-	margin : 8px 0;
+	margin-bottom: 8px;
 	text-align: center;
+	}
+.feature__block-img{
+	margin-bottom: 8px;
 	}
 .feature__block p {
 	color : var(--color-stale);
@@ -629,9 +632,15 @@ textarea {
 	width: 24px;
 	height: 24px;
 	}
+.menu-container .social__svg-bg{
+	padding: 8px;
+	}
 .footer svg{
 	width: 24px;
 	height: 24px;
+	}
+.footer .social__svg-bg{
+	padding: 8px;
 	}
 
 .overflow {
@@ -645,6 +654,8 @@ textarea {
 	}
 .modal-phone a{
 	color: var(--color-iris);
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
 	}
 .team h3{
 	font-size: 20px;
@@ -658,14 +669,24 @@ textarea {
 .footer p{
 	color: #ffffff;
 	}
+.portfolio__grid h3{
+	font-size: 20px;
+	line-height: calc(24 / 20);
+	font-weight: 500;
+	}
+
+@media screen and (max-width:375px){
+	.modal-phone a{
+		font-size: 25px;
+		}
+	.menu-container .social__icons{
+		gap: 25px;
+		}
+	}
 
 @media screen and (max-width:767px){
 
-	.portfolio__grid h3{
-		font-size: 20px;
-		line-height: calc(24 / 20);
-		font-weight: 500;
-		}
+
 	.feature__blocks {
 		display : flex;
 		gap     : 72px;

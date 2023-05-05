@@ -115,7 +115,7 @@
 	.footer__logo{
 		text-align: left;
 		max-width : 264px;
-		margin-left : 108px;
+		margin-left : 93px;
 		margin-right: 16px;
 		}
 	.footer__social{
@@ -128,7 +128,7 @@
 		}
 	.footer__subscribe{
 		text-align: left;
-		margin-left: 108px;
+		margin-left: 93px;
 		}
 	.footer__subscribe-form {
 		display: flex;
