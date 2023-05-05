@@ -4,18 +4,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style/modern-normalize.css">
-	<link rel="stylesheet" href="style/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
 	      rel="stylesheet">
+	<link rel="stylesheet" href="styles/modern-normalize.css">
+	<link rel="stylesheet" href="./styles/reset.css"/>
+	<link rel="stylesheet" href="./styles/vars.css"/>
+	<link rel="stylesheet" href="./styles/components.css"/>
+	<link rel="stylesheet" href="./styles/mobile.css"/>
+	<link rel="stylesheet" href="./styles/tablet.css"/>
+	<link rel="stylesheet" href="./styles/desktop.css"/>
 	<title>studio</title>
 </head>
 <body>
 <!--header-->
 <header class="header">
-	<div class="container">
+	<div class="container flex-header">
 		<nav class="header__nav nav">
 			<a class="header__logo logo-text" href="#"><span>web</span>studio</a>
 			<ul class="header__menu">
@@ -48,6 +53,11 @@
 				</li>
 			</ul>
 		</nav>
+		<button type="button" class="menu-toggle js-open-menu">
+			<svg width="32" height="32">
+				<use xlink:href="./img/svg/sprite.svg#icon-hamburger"></use>
+			</svg>
+		</button>
 	</div>
 </header>
 <!--main-->
@@ -56,26 +66,36 @@
 		<div class="container">
 			<ul class="portfolio__nav">
 				<li class="portfolio__nav-items">
-					<button class="portfolio__nav-btn" type="button">All</button>
+					<button class="portfolio__nav-btn button" type="button">All</button>
 				</li>
 				<li class="portfolio__nav-items">
-					<button class="portfolio__nav-btn" type="button">Web Site</button>
+					<button class="portfolio__nav-btn button" type="button">Web Site</button>
 				</li>
 				<li class="portfolio__nav-items">
-					<button class="portfolio__nav-btn" type="button">App</button>
+					<button class="portfolio__nav-btn button" type="button">App</button>
 				</li>
 				<li class="portfolio__nav-items">
-					<button class="portfolio__nav-btn" type="button">Design</button>
+					<button class="portfolio__nav-btn button" type="button">Design</button>
 				</li>
 				<li class="portfolio__nav-items">
-					<button class="portfolio__nav-btn" type="button">Marketing</button>
+					<button class="portfolio__nav-btn button" type="button">Marketing</button>
 				</li>
 			</ul>
 			<ul class="portfolio__grid">
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="bank" src="./img/portfolio/desk/img-8.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="bank"
+									src="./img/portfolio/desk/img-8.jpg"
+									srcset="./img/portfolio/mobile/img-8.jpg 396w,
+./img/portfolio/tablet/img-8.jpg 356w,
+./img/portfolio/desk/img-8.jpg 360w,
+./img/portfolio/mobile/img@2x-8.jpg 792w,
+./img/portfolio/tablet/img@2x-8.jpg 712w,
+./img/portfolio/desk/img@2x-8.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -91,7 +111,17 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="payment" src="./img/portfolio/desk/img-7.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="payment"
+									src="./img/portfolio/mobile/img-7.jpg"
+									srcset="./img/portfolio/mobile/img-7.jpg 396w,
+./img/portfolio/tablet/img-7.jpg 356w,
+./img/portfolio/desk/img-7.jpg 360w,
+./img/portfolio/mobile/img@2x-7.jpg 792w,
+./img/portfolio/tablet/img@2x-7.jpg 712w,
+./img/portfolio/desk/img@2x-7.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -106,17 +136,24 @@
 				</li>
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
-
-
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="meditation" src="./img/portfolio/desk/img-6.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="meditation"
+									src="./img/portfolio/mobile/img-6.jpg"
+									srcset="./img/portfolio/mobile/img-6.jpg 396w,
+./img/portfolio/tablet/img-6.jpg 356w,
+./img/portfolio/desk/img-6.jpg 360w,
+./img/portfolio/mobile/img@2x-6.jpg 792w,
+./img/portfolio/tablet/img@2x-6.jpg 712w,
+./img/portfolio/desk/img@2x-6.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
 								</div>
 							</div>
 						</div>
-
 						<div class="portfolio__grid-sub">
 							<h3>Meditaion App</h3>
 							<p>App</p>
@@ -126,7 +163,17 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="image taxi" src="./img/portfolio/desk/img-5.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="image taxi"
+									src="./img/portfolio/mobile/img-5.jpg"
+									srcset="./img/portfolio/mobile/img-5.jpg 396w,
+./img/portfolio/tablet/img-5.jpg 356w,
+./img/portfolio/desk/img-5.jpg 360w,
+./img/portfolio/mobile/img@2x-5.jpg 792w,
+./img/portfolio/tablet/img@2x-5.jpg 712w,
+./img/portfolio/desk/img@2x-5.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -142,7 +189,17 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="screen" src="./img/portfolio/desk/img-4.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="screen"
+									src="./img/portfolio/mobile/img-4.jpg"
+									srcset="./img/portfolio/mobile/img-4.jpg 396w,
+./img/portfolio/tablet/img-4.jpg 356w,
+./img/portfolio/desk/img-4.jpg 360w,
+./img/portfolio/mobile/img@2x-4.jpg 792w,
+./img/portfolio/tablet/img@2x-4.jpg 712w,
+./img/portfolio/desk/img@2x-4.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -159,7 +216,17 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="online courses" src="./img/portfolio/desk/img-3.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="online courses"
+									src="./img/portfolio/mobile/img-3.jpg"
+									srcset="./img/portfolio/mobile/img-3.jpg 396w,
+./img/portfolio/tablet/img-3.jpg 356w,
+./img/portfolio/desk/img-3.jpg 360w,
+./img/portfolio/mobile/img@2x-3.jpg 792w,
+./img/portfolio/tablet/img@2x-3.jpg 712w,
+./img/portfolio/desk/img@2x-3.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -175,8 +242,17 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="instagram stories"
-							     src="./img/portfolio/desk/img-2.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="instagram stories"
+									src="./img/portfolio/mobile/img-2.jpg"
+									srcset="./img/portfolio/mobile/img-2.jpg 396w,
+./img/portfolio/tablet/img-2.jpg 356w,
+./img/portfolio/desk/img-2.jpg 360w,
+./img/portfolio/mobile/img@2x-2.jpg 792w,
+./img/portfolio/tablet/img@2x-2.jpg 712w,
+./img/portfolio/desk/img@2x-2.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -192,7 +268,17 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="organic food" src="./img/portfolio/desk/img-1.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="organic food"
+									src="./img/portfolio/mobile/img-1.jpg"
+									srcset="./img/portfolio/mobile/img-1.jpg 396w,
+./img/portfolio/tablet/img-1.jpg 356w,
+./img/portfolio/desk/img-1.jpg 360w,
+./img/portfolio/mobile/img@2x-1.jpg 792w,
+./img/portfolio/tablet/img@2x-1.jpg 712w,
+./img/portfolio/desk/img@2x-1.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, ">
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -208,7 +294,18 @@
 				<li class="portfolio__grid-cell">
 					<a class="portfolio__grid-link" target="_blank" href="#">
 						<div class="portfolio-link-img">
-							<img class="portfolio__grid-img" alt="fresh coffee" src="./img/portfolio/desk/img.jpg">
+							<img
+									class="portfolio__grid-img"
+									alt="fresh coffee"
+									src="./img/portfolio/mobile/img.jpg"
+									srcset="./img/portfolio/mobile/img-1.jpg 396w,
+./img/portfolio/tablet/img-1.jpg 356w,
+./img/portfolio/desk/img-1.jpg 360w,
+./img/portfolio/mobile/img@2x-1.jpg 792w,
+./img/portfolio/tablet/img@2x-1.jpg 712w,
+./img/portfolio/desk/img@2x-1.jpg 720w"
+									sizes="(min-wight: 1200px) 360px, (min-wight: 768px) 356px, (min-wight: 480px) 396px, "
+							>
 							<div class="portfolio__grid_link-overflow">
 								<div class="overflow">Р14 Stylish and User-Friendly App Design Concepts · Task Manager
 									App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -274,7 +371,7 @@
 			<div class="footer__subscribe-form">
 				<label for="e-mail"></label>
 				<input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
-				<button class="subscribe-btn" type="submit">Subscribe
+				<button class="subscribe-btn button" type="submit">Subscribe
 					<svg>
 						<use xlink:href="./img/svg/sprite.svg#icon-icon-send"></use>
 					</svg>
@@ -283,6 +380,71 @@
 		</div>
 	</div>
 </footer>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+	<button type="button" class="modal-close-btn js-close-menu"></button>
+	<ul class="modal__nav">
+		<li class="header__menu-item">
+			<a class="header__link current-page" href="index.html">
+				Studio
+			</a>
+		</li>
+		<li class="header__menu-item">
+			<a class="header__link" href="portfolio.html">
+				Portfolio
+			</a>
+		</li>
+		<li class="header__menu-item">
+			<a class="header__link" href="#">
+				Contacts
+			</a>
+		</li>
+	</ul>
+	<ul class="modal__address">
+		<li class="header__contacts-item phone">
+			<a class="header__contacts-link" href="mailto:info@devstudio.com">
+				+11 (000) 111-11-11
+			</a>
+		</li>
+		<li class="header__contacts-item mail">
+			<a class="header__contacts-link mail" href="tel:+110001111111">
+				info@devstudio.com
+			</a>
+		</li>
+	</ul>
+	<ul class="social__icons">
+		<li>
+			<a href="#" class="social__svg-bg">
+				<svg height="16" width="16">
+					<use xlink:href="./img/svg/sprite.svg#icon-instagram-2"></use>
+				</svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="social__svg-bg">
+				<svg height="16" width="16">
+					<use xlink:href="./img/svg/sprite.svg#icon-twitter-1"></use>
+				</svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="social__svg-bg">
+				<svg height="16" width="16">
+					<use xlink:href="./img/svg/sprite.svg#icon-facebook-1"></use>
+				</svg>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="social__svg-bg">
+				<svg height="16" width="16">
+					<use xlink:href="./img/svg/sprite.svg#icon-linkedin-1"></use>
+				</svg>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

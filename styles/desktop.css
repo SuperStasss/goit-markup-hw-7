@@ -75,4 +75,17 @@
 	.footer__subscribe{
 		margin: 0;
 		}
+	.portfolio__content{
+		padding-top: 100px;
+		}
+	.portfolio__nav{
+		margin-bottom: 72px;
+		}
+	.portfolio__grid-sub {
+		max-width: 360px;
+		}
+
+	.portfolio-link-img {
+		max-width: 360px;
+		}
 	}
