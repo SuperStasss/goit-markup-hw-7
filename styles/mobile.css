@@ -655,6 +655,9 @@ textarea {
 	justify-content: start;
 	gap: 56px;
 	}
+.footer p{
+	color: #ffffff;
+	}
 
 @media screen and (max-width:767px){
 
