@@ -139,6 +139,7 @@
 	.portfolio__nav{
 		margin-bottom: 64px;
 		flex-wrap: nowrap;
+		gap: 24px;
 		}
 
 	.portfolio__grid-sub {
@@ -150,6 +151,9 @@
 		}
 	.portfolio__grid {
 		gap             : 72px 24px;
+		}
+	.portfolio__nav-btn{
+		padding: 12px 24px;
 		}
 	}
 @media screen and (min-width: 768px) and (max-width: 1200px){
